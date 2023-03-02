@@ -1,0 +1,28 @@
+/* 
+1st section background color - #FFFFFF
+2nd section and footer background color - #2F303A
+3rd section bacckground color - #F5F5F5; 
+4th section bacckground color - #F5F4FA
+color: #DDA0DD - orchid
+background color - #E6E6FA - lavender
+color 2 : #BA55D3 - medium orchid
+*/
+body {
+    background-color: #E6E6FA;
+    color: #942294
+}
+.logo:hover,
+.logo:focus {
+    color: #f12bc0;
+} 
+.site-nav {
+
+}
+.page-footer:hover,
+.page-header:hover {
+    background-color:rgb(169, 245, 245);
+}
+.section-1-link:hover
+.section-1-link:focus {
+    color: #050505;
+}
