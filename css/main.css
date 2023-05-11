@@ -103,15 +103,15 @@ body {
 
 /* button */
 
-.button{
-    color: var(--primary-text-color);
+.button {
+    color: var(--primary-title-color);
     background-color: var(--primary-white-color);
 }
-.button.primary{
+.button.primary { 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-.button.secondary{
+.button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
 }

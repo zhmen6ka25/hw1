@@ -66,6 +66,11 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
 }
+.button:focus,
+.button:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
 
 .button.primary {
     color: var(--primary-white-color);
