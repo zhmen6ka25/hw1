@@ -28,6 +28,8 @@ body {
     letter-spacing: 0.03em;
 }
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -37,6 +39,7 @@ h1,h2,h3,h4,h5,h6 {
 /* container site-nav */
 
 .container {
+    outline: 2px solid tomato;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
@@ -55,6 +58,7 @@ h1,h2,h3,h4,h5,h6 {
 /* Site nav */
 
 .site-nav .link {
+
     color: var(--primary-title-color);
     font-weight: 500;
     font-size: 14px;
@@ -85,14 +89,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Hero */
+.hero {
+    outline: 3px solid orchid;
+
+    background-color: var(--primary-background-color);
+    text-align: center;
+}
 
 .hero .title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     background-color: var(--primary-background-color);
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -156,13 +168,19 @@ h1,h2,h3,h4,h5,h6 {
 /* button */
 
 .button {
+    display: inline-block;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    min-width: 216px;
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+    text-align: center;
 }
 .button.primary { 
     color: var(--primary-white-color);
@@ -171,4 +189,5 @@ h1,h2,h3,h4,h5,h6 {
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
+    border-color: var(--accent-color);
 }
