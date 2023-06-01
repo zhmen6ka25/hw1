@@ -156,8 +156,8 @@ h1,h2,h3,h4,h5,h6 {
 /* button */
 
 .button {
-    color: var(--primary-title-color);
-    background-color: var(--primary-white-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
