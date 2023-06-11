@@ -10,6 +10,10 @@
 /* accent - #2196F3 */
 /* primary background color - #FFFFFF */
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-text-color: #757575;
     --primary-title-color: #212121;
@@ -26,6 +30,9 @@ body {
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+}
+p, h1, h2, h3, h4 {
+    margin: 0;
 }
 .list {
     padding: 0;
@@ -53,6 +60,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 26px;
     line-height: 1,19;
     text-decoration: none;
+
+    color: var(--accent-color);
 }
 
 /* Site nav */
@@ -94,11 +103,13 @@ h1,h2,h3,h4,h5,h6 {
 
     background-color: var(--primary-background-color);
     text-align: center;
+
 }
 
 .hero .title {
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
 
     background-color: var(--primary-background-color);
     color: var(--primary-white-color);
@@ -111,6 +122,8 @@ h1,h2,h3,h4,h5,h6 {
 .hero .button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    margin-top: 0;
+    margin-bottom: 200px;
 }
 
 /* Section */
@@ -123,6 +136,7 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 94px;
 }
 
 /* Skills */
@@ -133,6 +147,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .feature > .text {
     color: var(--primary-text-color);
@@ -140,31 +155,57 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     line-height: 1.71;   
     letter-spacing: 0.03em;
+    margin-bottom: 118px;
 }
+
+/* what company does */
+
+
 
 /* our team */
 
-.section > .employee {
+.container > .section > .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+.employee > .photo {
+    margin-bottom: 30px;
+}
+.employee > .name {
     color: var(--primary-title-color);
+    margin-bottom: 10px;
 }
 .employee > .position {
     color: var(--primary-text-color);
+    padding-bottom: 30px;
 }
 
 /* footer */
 
 .page-footer {
     background-color: var(--primary-background-color);
+    padding-top: 60px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-footer .logo {
+    color: var(--primary-white-color);
 }
 .page-footer .address {
     color: var(--primary-white-color);
     text-decoration: none;
+    margin-top: 20px
+}
+.page-footer .contacts {
+    padding-bottom: 60px;
 }
 .page-footer .contact {
     color: var(--secondary-text-color);
     text-decoration: none;
+    margin-top: 9px;
 }
-
 /* button */
 
 .button {
