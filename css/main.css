@@ -31,7 +31,7 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-p, h1, h2, h3, h4 {
+p, h1, h2, h3, h4, h5 {
     margin: 0;
 }
 .list {
@@ -128,6 +128,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Section */
 
+.section {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    outline: 2px solid teal;
+}
+
 .section > .title {
     color: var(--primary-title-color);
     font-family: 'Roboto';
@@ -136,7 +144,8 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 94px;
+    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 /* Skills */
@@ -155,12 +164,14 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     line-height: 1.71;   
     letter-spacing: 0.03em;
-    margin-bottom: 118px;
+    padding-bottom: 118px;
 }
 
 /* what company does */
 
-
+.photos {
+    padding-bottom: 94px;
+}
 
 /* our team */
 
