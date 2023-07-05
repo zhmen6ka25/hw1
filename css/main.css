@@ -43,14 +43,25 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Roboto, sans-serif;
 }
 
+/* Header */
+
+.page-header {
+}
+/* Main Nav */
+
+.main-nav{
+    display:flex;
+    align-items: center;
+}
 /* container site-nav */
 
 .container {
     outline: 2px solid tomato;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 /* Logo */
 .logo {
@@ -66,38 +77,80 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Site nav */
 
-.site-nav .link {
+.site-nav {
+    display:flex;
+    margin-left: 93px;
+}
 
+/* .site-nav .item {
+    /* margin-right: 50px;
+    outline: 1px solid tomato;
+} */
+
+/* .site-nav .item:last-child {
+    margin-right: 0;
+} */
+
+.site-nav .item:not( :last-child) {
+    margin-right: 40px;
+}
+
+/* .site-nav .item + .item {
+    margin-left: 40px;
+} */
+
+.site-nav .link {
+    display:block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     color: var(--primary-title-color);
+    
+    text-align: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
+
 .site-nav .link.current{
     color: var(--accent-color);
 }
 
-/* contact links list */
+/* contact nav list */
 
-.links .e-mail-link,
-.links .phone-link {
+.contact-nav {
+    display:flex;
+    margin-left: auto;
+}
+
+.contact-nav .item + .item {
+    margin-left: 40px;
+}
+
+.contact-nav .link {
+    display:block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-title-color);
     text-decoration: none;
 }
-.links .e-mail-link:hover,
-.links .phone-link:hover,
-.links .e-mail-link:focus,
-.links .phone-link:focus {
+
+.contact-nav .link:focus,
+.contact-nav .link:hover {
     color: var(--accent-color);
 }
 
 /* Hero */
+
 .hero {
     outline: 3px solid orchid;
 
@@ -119,6 +172,7 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
 .hero .button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
@@ -129,11 +183,10 @@ h1,h2,h3,h4,h5,h6 {
 /* Section */
 
 .section {
-    width: 1170px;
+    width: 1200px;
+    outline: 2px solid teal;
     padding-left: 15px;
     padding-right: 15px;
-    
-    outline: 2px solid teal;
 }
 
 .section > .title {
@@ -150,6 +203,10 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Skills */
 
+.title-hidden {
+    display: none;
+}
+
 .feature > .title {
     color: var(--primary-title-color);
     font-weight: 700;
@@ -157,7 +214,9 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    padding-top: 94px;
 }
+
 .feature > .text {
     color: var(--primary-text-color);
     font-weight: 400;
@@ -175,18 +234,26 @@ h1,h2,h3,h4,h5,h6 {
 
 /* our team */
 
+.container > .section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .container > .section > .title {
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 94px;
 }
+
 .employee > .photo {
     margin-bottom: 30px;
 }
+
 .employee > .name {
     color: var(--primary-title-color);
     margin-bottom: 10px;
 }
+
 .employee > .position {
     color: var(--primary-text-color);
     padding-bottom: 30px;
@@ -196,27 +263,29 @@ h1,h2,h3,h4,h5,h6 {
 
 .page-footer {
     background-color: var(--primary-background-color);
-    padding-top: 60px;
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
+
 .page-footer .logo {
     color: var(--primary-white-color);
+    padding-top: 60px;
 }
+
 .page-footer .address {
     color: var(--primary-white-color);
     text-decoration: none;
     margin-top: 20px
 }
+
 .page-footer .contacts {
     padding-bottom: 60px;
 }
+
 .page-footer .contact {
     color: var(--secondary-text-color);
     text-decoration: none;
     margin-top: 9px;
 }
+
 /* button */
 
 .button {
@@ -234,10 +303,12 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     text-align: center;
 }
+
 .button.primary { 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
