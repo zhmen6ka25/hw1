@@ -45,8 +45,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 
-.page-header {
-}
+
 /* Main Nav */
 
 .main-nav{
@@ -60,6 +59,8 @@ h1,h2,h3,h4,h5,h6 {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -182,11 +183,16 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Section */
 
+.traits {
+    display:flex;
+}
 .section {
     width: 1200px;
     outline: 2px solid teal;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section > .title {
@@ -207,7 +213,7 @@ h1,h2,h3,h4,h5,h6 {
     display: none;
 }
 
-.feature > .title {
+.trait > .title {
     color: var(--primary-title-color);
     font-weight: 700;
     font-size: 14px;
@@ -217,7 +223,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 94px;
 }
 
-.feature > .text {
+.trait > .text {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -234,10 +240,15 @@ h1,h2,h3,h4,h5,h6 {
 
 /* our team */
 
-.container > .section {
-    padding-left: 0;
-    padding-right: 0;
+.container-employee {
+    width: 1200px;
+    outline: 2px solid teal;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
 .container > .section > .title {
     margin-top: 0;
