@@ -325,3 +325,18 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--primary-white-color);
     border-color: var(--accent-color);
 }
+
+/* portfolio.html */
+
+/* features */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+}
+
+.feature {
+    width: 370px;
+    background-color: tomato;
+}
