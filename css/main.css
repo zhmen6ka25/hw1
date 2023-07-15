@@ -330,10 +330,11 @@ h1,h2,h3,h4,h5,h6 {
 
 /* features */
 
-.flex-container {
+.container-features {
     display: flex;
     flex-wrap: wrap;
     background-color: teal;
+    
 }
 
 .feature {
