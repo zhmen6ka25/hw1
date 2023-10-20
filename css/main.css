@@ -410,6 +410,25 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--primary-white-color);
     border-color: var(--accent-color);
 }
+/* social links */
+
+.links{
+    display:flex;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid black;
+    list-style: none;
+}
+
+.social.link{
+    padding: 0;
+    border: 0;
+}
+
+.link-icon{
+    width: 44px;
+    height: 44px;
+}
 
 /* portfolio.html */
 
