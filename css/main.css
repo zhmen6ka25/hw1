@@ -22,6 +22,7 @@
     --secondary-text-color: rgba(255,255,255,0.6);
     --primary-background-color: #2F303A;
     --secondary-background-color: #f5f4fa;
+    --secondary-link-color: #afb1b8;
 }
 
 
@@ -410,6 +411,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--primary-white-color);
     border-color: var(--accent-color);
 }
+
 /* social links */
 
 .links{
@@ -422,17 +424,24 @@ h1,h2,h3,h4,h5,h6 {
 
 .social.link{
     padding: 0;
-    border: 0;
+    border: none;
+    width: 100px;
+    height: 100px;
+    fill: var(--secondary-link-color);
+    background-color: currentColor;
+    border-radius: 50%;
 }
 
 .link-icon{
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-link-color);
 }
 
 .link-icon:hover{
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+    border-radius: 50%;
 }
 
 /* portfolio.html */
