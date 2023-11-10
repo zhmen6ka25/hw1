@@ -414,7 +414,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* social links */
 
-.links{
+.social{
     display: flex;
     padding: 0;
     margin: 0;
@@ -422,24 +422,31 @@ h1,h2,h3,h4,h5,h6 {
     list-style: none;
 }
 
-.links .link{
+.social > .link{
     padding: 0;
+    width: 44px;
+    height: 44px;
     border: none;
     margin-left: 10px;
     background-color: currentColor;
+}
+
+.link:hover{
+    background-color: var(--accent-color);
 }
 
 .link-icon{
     width: 44px;
     height: 44px;
     fill: var(--secondary-link-color);
+    border-radius: 50%;
 }
-
+/* 
 .link-icon:hover{
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
     border-radius: 50%;
-}
+} */
 
 /* portfolio.html */
 
