@@ -57,7 +57,6 @@ h1,h2,h3,h4,h5,h6 {
 /* container site-nav */
 
 .container {
-    outline: 2px solid tomato;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
