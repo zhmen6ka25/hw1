@@ -281,78 +281,84 @@ h1,h2,h3,h4,h5,h6 {
 
 /* our team */
 
-.section.employee {
+.employees {
     background-color: var(--secondary-background-color);
     width:auto;
+    display: block;
 }
-.test-container.employees {
+.employees-list {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     background-color: blueviolet;
+    display: flex;
 }
 
-.flex-element.employees {
+.employees-item {
     width: calc((100% - 90px) / 4);
     text-align: center;
     background-color: tomato;
     margin-bottom: 30px;
 }
 
-.flex-element.employees:not(:nth-child(4n)) {
+.employees-item:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
-.flex-element.employees:not(:nth-last-child(-n+4)) {
+.employees-item:not(:nth-last-child(-n+4)) {
     margin-bottom: 30px;
 }
 
-.flex-element > .employee {
+.container > .employees-item {
     width: 270px;
     background-color: orchid;
     margin-bottom: 30px;
 }
 
-/* .flex-element > .title {
-    width:auto;
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-top: 94px; 
-    text-align: center;
-} */
 
-.flex-element > .name {
+.employees-item .title {
     width: auto;
     color: var(--primary-title-color);
     margin-bottom: 10px;
 }
 
-.flex-element > .position{
+.employees-item .text{
     width: auto;
     color: var(--primary-text-color);
     margin-bottom: 30px;
 }
 
-/* .container > .section > .title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-top: 94px;
-} */
+/* social links */
 
-/* .employee > .photo {
-    margin-bottom: 30px;
-} */
+.social-list {
+    display:flex;
+    justify-content: center;
+}
 
-/* .employee > .name {
-    color: var(--primary-title-color);
-    margin-bottom: 10px;
-} */
+.social-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
 
-/* .employee > .position {
-    color: var(--primary-text-color);
-    padding-bottom: 30px;
-} */
+.social-item:last-child {
+    margin-right: 0;
+}
+.social-icon {
+    fill: var(--primary-white-color)
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* footer */
 
@@ -411,37 +417,8 @@ h1,h2,h3,h4,h5,h6 {
     border-color: var(--accent-color);
 }
 
-/* social links */
 
-.social{
-    display: flex;
-    height: 44px;
-    padding: 0;
-    margin: 0;
-    outline: 1px solid black;
-    list-style: none;
-}
 
-.link{
-    box-sizing: content-box;
-    width: 44px;
-    padding: 0;
-    border: none;
-    margin-left: 10px;
-    background-color: currentColor;
-}
-
-.link-icon{
-    width: 20px;
-    height: 20px;
-    fill: var(--secondary-link-color);
-}
-/* 
-.link-icon:hover{
-    background-color: var(--accent-color);
-    fill: var(--primary-white-color);
-    border-radius: 50%;
-} */
 
 /* portfolio.html */
 
