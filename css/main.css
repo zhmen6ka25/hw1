@@ -291,14 +291,14 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
 }
 
 .employees-item {
     width: calc((100% - 90px) / 4);
     text-align: center;
-    background-color: tomato;
+    /* background-color: tomato; */
     margin-bottom: 30px;
 }
 
@@ -312,7 +312,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .container > .employees-item {
     width: 270px;
-    background-color: orchid;
+    /* background-color: orchid; */
     margin-bottom: 30px;
 }
 
@@ -346,17 +346,27 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: 0;
 }
 .social-icon {
-    fill: var(--primary-white-color)
+    fill: var(--secondary-link-color);
 }
 
 .social-link {
     width: 100%;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--primary-white-color);
 }
 
 
