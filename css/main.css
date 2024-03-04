@@ -285,10 +285,17 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--secondary-background-color);
     width:auto;
     display: block;
+    width: auto;
+    outline: 2px solid teal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.employees .container {
+    padding-left: 0;
 }
 .employees-list {
     padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     /* background-color: blueviolet; */
@@ -298,8 +305,34 @@ h1,h2,h3,h4,h5,h6 {
 .employees-item {
     width: calc((100% - 90px) / 4);
     text-align: center;
-    /* background-color: tomato; */
+    background-color: var(--primary-white-color);
     margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.employees-item {
+    /* background-color: orchid; */
+    margin-bottom: 30px;
+}
+
+
+.employees-item .title {
+    width: 240px;
+    color: var(--primary-title-color);
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.employees-item .text{
+    width: 240px;
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.employees-title-description {
+    
 }
 
 .employees-item:not(:nth-child(4n)) {
@@ -307,25 +340,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .employees-item:not(:nth-last-child(-n+4)) {
-    margin-bottom: 30px;
-}
-
-.container > .employees-item {
-    width: 270px;
-    /* background-color: orchid; */
-    margin-bottom: 30px;
-}
-
-
-.employees-item .title {
-    width: auto;
-    color: var(--primary-title-color);
-    margin-bottom: 10px;
-}
-
-.employees-item .text{
-    width: auto;
-    color: var(--primary-text-color);
     margin-bottom: 30px;
 }
 
